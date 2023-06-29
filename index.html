@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1632/PNG/512/62911paintbrush_109234.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="settings">
+            <div class="buttons">
+               <button id="clear">Clear Board</button>
+                <button id="eraser"> Erase </button>
+                <button id="outline">Show Outline</button>
+                <button id="pen" class="colors"> Show Pen Colors</button>
+                <button id="background" class="colors"> Show Background Colors</button> 
+            </div>
+            
+            <div class="length-container">
+                <label for="side-slider" class="area"><span class="side-length"></span><span>x</span><span class="side-length"></span></label>
+                <input type="range" min="0" max="100" value="64" step="1" id="side-slider">
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
